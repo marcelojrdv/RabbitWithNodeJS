@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="amqplib/examples/tutorials/|amqplib/lib/|amqplib/|amqplib/bin/|amqplib/examples/|amqplib/test/|amqplib/examples/tutorials/callback_api/" kind="src" path=""/>
+	<classpathentry excluding="examples/tutorials/|lib/|bin/|examples/|test/|examples/tutorials/callback_api/" kind="src" path="amqplib"/>
+	<classpathentry kind="src" path="amqplib/bin"/>
+	<classpathentry excluding="tutorials/|tutorials/callback_api/" kind="src" path="amqplib/examples"/>
+	<classpathentry excluding="callback_api/" kind="src" path="amqplib/examples/tutorials"/>
+	<classpathentry kind="src" path="amqplib/examples/tutorials/callback_api"/>
+	<classpathentry kind="src" path="amqplib/lib"/>
+	<classpathentry kind="src" path="amqplib/test"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

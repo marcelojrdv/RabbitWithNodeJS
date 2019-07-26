@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <p>TESTE {{ title }}</p>
+    
+    <h3>Status conexao:</h3>
+    <p>{{ connectionStatus }}</p>
+    <p>{{ exchangeStatus }}</p>
+    <p>{{ queueStatus }}</p>
+    
+    <h1>Selecione uma opcao</h1>
+    <form action="/start-server" method="post">
+	<input type="submit" value="Start the server">
+	<br>
+	</form>
+	
+	<form action="/new-exchange" method="post">
+	<br>
+	<input type="submit" value="Establish an exchange">
+	<br>
+	</form>
+	
+	<form action="/new-queue" method="post">
+	<br>
+	<input type="submit" value="Establish a message queue">
+	<br>
+	</form>
+	
+	<br>
+	<!-- Esse código é para páginas jade, quando a fila estiver pronta para uso e a conexão estabelecida exibirá o link para enviar-->
+	<!-- if (queueStatus == 'The queue is ready for use!' && exchangeStatus == 'An exchange has been established!')
+		  h2 BOOM! SUCCESS! -->
+	<a href="/message-service">Clique aqui para enviar e mensagem de servico</a>
+  </body>
+</html>
